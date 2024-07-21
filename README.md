@@ -23,9 +23,9 @@ This script is designed to work with webpages in both Arabic and English. It use
 
 To run this script, you need the following Python libraries:
 
-- `requests`: To make HTTP requests to fetch webpage content.
-- `beautifulsoup4`: To parse and extract data from HTML.
-- `csv`: To write data into a CSV file.
+- `requests` : Make HTTP requests to fetch webpage content.
+- `beautifulsoup4` : Parse and extract data from HTML.
+- `csv` : Write data into a CSV file.
 
 You can install these libraries using pip:
 
