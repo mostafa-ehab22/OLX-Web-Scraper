@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="3piz7pXAVaKBTfHvpw6L" name="Page-1">
-        <mxGraphModel dx="1664" dy="1954" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="1261" dy="1602" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -12,6 +12,11 @@
                 </mxCell>
                 <mxCell id="16" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="17" target="21" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="Text" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="16">
+                    <mxGeometry x="0.316" y="-1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
                 </mxCell>
                 <mxCell id="17" value="&lt;b style=&quot;font-size: 15px;&quot;&gt;&lt;u style=&quot;font-size: 15px;&quot;&gt;User Inputs&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/u&gt;&lt;/b&gt;&lt;br style=&quot;font-size: 15px;&quot;&gt;Item OLX Link&lt;br style=&quot;font-size: 15px;&quot;&gt;Saving Folder" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;fillColor=#60a917;strokeColor=#2D7600;fontColor=#ffffff;fontSize=15;" parent="1" vertex="1">
                     <mxGeometry x="220" y="45" width="150" height="90" as="geometry"/>
@@ -25,7 +30,7 @@
                 <mxCell id="21" value="&lt;b style=&quot;font-size: 15px;&quot;&gt;&lt;u style=&quot;font-size: 15px;&quot;&gt;Fetch items &lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/u&gt;&lt;/b&gt;Name&lt;br style=&quot;font-size: 15px;&quot;&gt;Price" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;fontSize=15;" parent="1" vertex="1">
                     <mxGeometry x="430" y="52.5" width="170" height="75" as="geometry"/>
                 </mxCell>
-                <mxCell id="38" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;fontSize=15;fontColor=#000000;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="23" target="24">
+                <mxCell id="38" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;fontSize=15;fontColor=#000000;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="23" target="24" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="100" y="560" as="targetPoint"/>
                         <Array as="points">
@@ -39,35 +44,35 @@
                 <mxCell id="24" value="End" style="ellipse;whiteSpace=wrap;html=1;fillColor=#647687;fontColor=#ffffff;strokeColor=#314354;fontSize=17;" parent="1" vertex="1">
                     <mxGeometry x="180" y="350" width="120" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="37" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=15;fontColor=#000000;" edge="1" parent="1" source="25" target="23">
+                <mxCell id="37" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=15;fontColor=#000000;" parent="1" source="25" target="23" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="25" value="Write CSV file" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;shadow=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;fontSize=16;" parent="1" vertex="1">
                     <mxGeometry x="440" y="520" width="160" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="32" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="26" target="31">
+                <mxCell id="32" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="26" target="31" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="26" value="&lt;b style=&quot;font-size: 15px;&quot;&gt;&lt;u style=&quot;font-size: 15px;&quot;&gt;Calculate&lt;/u&gt;&lt;/b&gt;&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;br style=&quot;font-size: 15px;&quot;&gt;Lowest price&lt;br style=&quot;font-size: 15px;&quot;&gt;Average price" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;fontSize=15;" parent="1" vertex="1">
                     <mxGeometry x="432.5" y="190" width="165" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="33" value="Yes" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontStyle=1;fontSize=19;" edge="1" parent="1" source="31" target="25">
+                <mxCell id="33" value="Yes" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontStyle=1;fontSize=19;" parent="1" source="31" target="25" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="39" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=16;fontColor=#FFFFFF;" edge="1" parent="1" source="31" target="24">
+                <mxCell id="39" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=16;fontColor=#FFFFFF;" parent="1" source="31" target="24" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="41" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=15;fontColor=#FFFFFF;" vertex="1" connectable="0" parent="39">
+                <mxCell id="41" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=15;fontColor=#FFFFFF;" parent="39" vertex="1" connectable="0">
                     <mxGeometry x="-0.2028" y="4" relative="1" as="geometry">
                         <mxPoint x="94" y="-24" as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="42" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=19;fontColor=#FFFFFF;" vertex="1" connectable="0" parent="39">
+                <mxCell id="42" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=19;fontColor=#FFFFFF;" parent="39" vertex="1" connectable="0">
                     <mxGeometry x="-0.4343" y="-2" relative="1" as="geometry">
                         <mxPoint x="15" y="-18" as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="31" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Create CSV&amp;nbsp; confirmation&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffcd28;strokeColor=#d79b00;gradientColor=#ffa500;fontColor=#000000;fontSize=15;" vertex="1" parent="1">
+                <mxCell id="31" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Create CSV&amp;nbsp; confirmation&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffcd28;strokeColor=#d79b00;gradientColor=#ffa500;fontColor=#000000;fontSize=15;" parent="1" vertex="1">
                     <mxGeometry x="450" y="320" width="135" height="140" as="geometry"/>
                 </mxCell>
             </root>
