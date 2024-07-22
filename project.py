@@ -15,6 +15,7 @@ def get_info():
     default_path = os.path.join(os.path.expanduser("~"), "Documents", "output.csv")
     link = input("\nItem link: ")
     save_folder = input("\nSave folder path (Default: Documents\ouput.csv): ")
+    print()
     
     # Exit if no link is provided
     if link == "":
