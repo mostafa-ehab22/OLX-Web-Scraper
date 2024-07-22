@@ -59,5 +59,6 @@ Item: 4,670.21 EGP
 Lowest Price: 123.45 EGP
 Average Price: 678.90 EGP
 
-Do you want to create csv file? (y/n):
+Do you want to create csv file? (y/n): y
+File created successfully!
 ```
