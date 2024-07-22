@@ -10,7 +10,7 @@
 
 # Overview
 
-This Python script is a web scraper designed to fetch item listings from OLX, extract item names and prices, and calculate statistics such as the lowest and average prices. The results are saved in a CSV file for easy review. The script is compatible with webpages that use both English and Arabic languages, thanks to its use of regular expressions (regex) for parsing prices.
+This Python script is a web scraper designed to fetch item listings from OLX __(Dubbizle)__ , extract item names and prices, and calculate statistics such as the lowest and average prices. The results are saved in a CSV file for easy review. The script is compatible with webpages that use both English and Arabic languages, thanks to its use of regular expressions (regex) for parsing prices.
 
 # Features
 
