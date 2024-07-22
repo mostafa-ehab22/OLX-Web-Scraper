@@ -64,7 +64,7 @@ def create_csv(items_details, save_folder):
         writer = csv.DictWriter(output_file, headers)
         writer.writeheader()
         writer.writerows(items_details)
-        print("File successfully created")
+        print("File created successfully!\n")
 
 
 

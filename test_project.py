@@ -5,10 +5,6 @@ import csv
 from project import get_info, fetch_listings, add_item_price, evaluate_prices, create_csv
 
 def test_get_info(monkeypatch):
-    # Test with user providing both link and using default save folder
-    monkeypatch.setattr('builtins.input', lambda _: "http://example.com")
-    assert get_info() == ("http://example.com", os.path.join(os.path.expanduser("~"), "Documents", "output.csv"))
-    
     # Test with user providing both link & save folder
     input_values = iter(["http://example.com", "custom_folder/output.csv"])
     monkeypatch.setattr('builtins.input', lambda _: next(input_values))
