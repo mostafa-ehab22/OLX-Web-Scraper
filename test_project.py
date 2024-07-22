@@ -66,7 +66,7 @@ def test_evaluate_prices():
     # Test with an empty list of prices
     assert evaluate_prices([]) == None
 
-# Test for the create_csv function
+
 def test_create_csv(tmp_path):
     items_details = [{'name': 'Item1', 'price': 100}, {'name': 'Item2', 'price': 200}]
     
