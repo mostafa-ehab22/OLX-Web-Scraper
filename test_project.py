@@ -4,6 +4,7 @@ import requests
 import csv
 from project import get_info, fetch_listings, add_item_price, evaluate_prices, create_csv
 
+
 def test_get_info(monkeypatch):
     # Test with user providing both link & save folder
     input_values = iter(["http://example.com", "custom_folder/output.csv"])
