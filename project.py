@@ -5,27 +5,29 @@ import csv
 import requests
 from bs4 import BeautifulSoup
 
-# User inputs link & Saving folder for csv
+# User inputs link & Saving folder for CSV
 def get_info():
     default_path = os.path.join(os.path.expanduser("~"), "Documents", "output.csv")
     link = input("\nItem link: ")
     save_folder = input("\nSave folder path (Default: Documents\ouput.csv): ")
     
+    # Exit if no link is provided
     if link == "":
         sys.exit("No link provided. Exiting...")
-
+    
+    # Use default path if no save folder is provided
     if save_folder == "":
         save_folder = default_path
     
     return (link, save_folder)
 
-# Fetching listings from webpage
+# Fetching listings from given webpage
 def fetch_listings(link):
     page = requests.get(link)
     src = page.content # Page content (Byte code)
     soup = BeautifulSoup(src, "html.parser") # Parsing page
 
-    # Fetching items listings on webpage
+    # Fetching all items listings 
     listings = soup.find_all('div', {'class': 'b5af0448'})
     return listings
 
@@ -33,11 +35,10 @@ def fetch_listings(link):
 def add_item_price(item_price, prices):
     if item_price != "Price not found":
         try:
-            # Use regex to extract numeric part of the price
+            # Regex to extract numeric part of the price
             match = re.search(r'\d+[\.,\d]*', item_price)
             if match:
-                # Replace commas & periods if necessary,  
-                # Convert to float
+                # Replace commas & convert to float
                 clean_price_str = match.group().replace(",", "")
                 clean_price = float(clean_price_str)
                 prices.append(clean_price)
@@ -55,7 +56,7 @@ def evaluate_prices(prices):
         except (TypeError, ZeroDivisionError):
             print(f"Error when evaluating prices: {e}")
 
-# Creating csv File
+# Creating CSV File from items details
 def create_csv(items_details, save_folder):
     headers = items_details[0].keys()
     
@@ -72,39 +73,39 @@ def main():
     listings = fetch_listings(link)
     number_of_listings = len(listings)
 
-    # Initialize items details list
+    # Initialize lists to store item details and prices
     items_details = []
-    # Initialize prices list
     prices = []
     
-    # Getting name & price of each item
+    # Iterate over each listing to extract name and price
     for i in range(number_of_listings):
-
-        # Find item name & price
+    
+        # Find item name & price tags
         item_name_tag = listings[i].find('h2', {'class': '_941ffa5e'})
         item_price_tag = listings[i].find('span', {'class': '_1f2a2b47'})
 
-        # Check if item name exists
+        # Extract item name
         if item_name_tag:
             item_name = item_name_tag.text
         else:
             item_name = "Name not found"
         
-        # Check if item price exists        
+        # Extract item price       
         if item_price_tag:
             item_price = item_price_tag.text
         else:
             item_price = "Price not found"
         
-        # Adding item price => prices list
+        # Add item price to prices list
         add_item_price(item_price,prices)
         
-        # Adding item info => Items details list
+        # Add item details to items details list
         items_details.append({'name': item_name, 'price': item_price})
         
         print(f"{item_name} : {item_price}")
 
-    # Get Lowest & Average Price
+
+    # Calculate Lowest & Average prices
     lowest_price, average_price = evaluate_prices(prices)
 
     print(f"\n(Showing {number_of_listings} results)\n")
@@ -112,7 +113,7 @@ def main():
     print(f"Average Price: {average_price:,.2f} EGP\n")
 
 
-    # Creating CSV File
+    # Prompt user to confirm creation of CSV file
     confirmation = input("Do you want to create csv file? (y/n): ").lower().strip()
     if confirmation == 'y':
         create_csv(items_details, save_folder)
