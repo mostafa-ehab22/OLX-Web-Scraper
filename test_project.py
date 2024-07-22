@@ -56,6 +56,7 @@ def test_add_item_price():
     assert prices == [1000.0]
 
 
+
 def test_evaluate_prices():
     # Test with a list of prices
     prices = [100, 200, 300]
@@ -65,6 +66,7 @@ def test_evaluate_prices():
     
     # Test with an empty list of prices
     assert evaluate_prices([]) == None
+
 
 
 def test_create_csv(tmp_path):
