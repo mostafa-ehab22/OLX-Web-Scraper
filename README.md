@@ -51,8 +51,8 @@ Save folder path: C:\Users\YourUsername\Documents\items.csv
 
 ### Output
 ```
-Item Name: Example Item
-Price: 1,234.56 EGP
+Item: 1,234.56 EGP
+Item: 4,670.21 EGP
 
 (Showing 10 results)
 
