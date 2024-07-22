@@ -5,6 +5,11 @@ import csv
 import requests
 from bs4 import BeautifulSoup
 
+"""
+🧨 Mostafa Ehab Yehia 🧨
+OLX Web Scraper Project
+"""
+
 # User inputs link & Saving folder for CSV
 def get_info():
     default_path = os.path.join(os.path.expanduser("~"), "Documents", "output.csv")
