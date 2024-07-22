@@ -1,6 +1,12 @@
 <h1 align=center>OLX Web Scraper</h1>
 <br>
-<br>
+
+<div align=center>
+    <span>🍿</span>
+<a href="https://www.youtube.com/watch?v=1tqYgZAPzo0" alt="Video Demo">Video Demo</a>
+    <span>🍿</span>
+</div>
+
 
 # Overview
 
