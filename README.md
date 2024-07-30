@@ -62,5 +62,8 @@ Average Price: 678.90 EGP
 Do you want to create csv file? (y/n): y
 File created successfully!
 ```
+
+<br>
+
 ## License
 This repository contains OLX Web-Scraper. It is licensed under the MIT License. See LICENSE file for more information.
