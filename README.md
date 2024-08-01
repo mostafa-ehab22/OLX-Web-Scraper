@@ -62,3 +62,8 @@ Average Price: 678.90 EGP
 Do you want to create csv file? (y/n): y
 File created successfully!
 ```
+<br>
+<hr>
+
+### License
+This repository is licensed under the MIT License. See [LICENSE](https://github.com/mostafa-ehab22/OLX-Web-Scraper/blob/master/LICENSE.txt) for more information.
