@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="3piz7pXAVaKBTfHvpw6L" name="Page-1">
-        <mxGraphModel dx="1261" dy="1602" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
+        <mxGraphModel dx="1436" dy="1904" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -12,11 +12,6 @@
                 </mxCell>
                 <mxCell id="16" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="17" target="21" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="43" value="Text" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="16">
-                    <mxGeometry x="0.316" y="-1" relative="1" as="geometry">
-                        <mxPoint as="offset"/>
-                    </mxGeometry>
                 </mxCell>
                 <mxCell id="17" value="&lt;b style=&quot;font-size: 15px;&quot;&gt;&lt;u style=&quot;font-size: 15px;&quot;&gt;User Inputs&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/u&gt;&lt;/b&gt;&lt;br style=&quot;font-size: 15px;&quot;&gt;Item OLX Link&lt;br style=&quot;font-size: 15px;&quot;&gt;Saving Folder" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;fillColor=#60a917;strokeColor=#2D7600;fontColor=#ffffff;fontSize=15;" parent="1" vertex="1">
                     <mxGeometry x="220" y="45" width="150" height="90" as="geometry"/>
