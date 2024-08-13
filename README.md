@@ -10,7 +10,7 @@
 
 # Overview
 
-This Python script fetches item listings from OLX (Dubizzle), extracts item names and prices, and calculates the lowest and average prices. It saves the results locally in a CSV for easy access and even handles both English and Arabic languages using regex magic!
+This Python script fetches item listings from OLX (Dubizzle), extracts item names and prices, then calculates the lowest and average prices. It saves the results locally in a CSV for easy access and even handles both English and Arabic languages using regex magic!
 
 # Features
 
