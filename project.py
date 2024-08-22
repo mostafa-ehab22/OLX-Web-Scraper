@@ -59,7 +59,7 @@ def evaluate_prices(prices):
             lowest_price = min(prices)
             average_price = sum(prices) / len(prices)
             return (lowest_price, average_price)
-        except (TypeError, ZeroDivisionError):
+        except (TypeError, ZeroDivisionError) as e:
             print(f"Error when evaluating prices: {e}")
 
 # Creating CSV File from items details
