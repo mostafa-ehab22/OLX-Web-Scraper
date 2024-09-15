@@ -23,8 +23,6 @@ This Python script fetches item listings from OLX (Dubizzle), extracts item name
 # Compatibility
 This script is designed to work with webpages in both Arabic and English. It uses regex to handle different currency formats and symbols, making it versatile for various international sites.
 
-<br>
-
 ## Prerequisites
 
 To run this script, you need the following Python libraries:
