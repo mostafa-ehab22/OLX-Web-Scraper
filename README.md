@@ -64,4 +64,4 @@ File created successfully!
 <hr>
 
 ### License
-This repository is licensed under the MIT License. See [LICENSE](https://github.com/mostafa-ehab22/OLX-Web-Scraper/blob/master/LICENSE.txt) for more information.
+This repository is licensed under the MIT License. See [LICENSE](LICENSE.txt) for more information.
