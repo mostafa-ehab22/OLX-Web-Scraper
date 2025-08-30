@@ -8,7 +8,7 @@
 </div>
 
 
-# 📊 Overview
+# 📊 Project Overview
 
 This Python script fetches item listings from OLX (Dubizzle), extracts item names and prices, then calculates the lowest and average prices. It saves the results locally in a CSV for easy access and even handles both English and Arabic languages using regex magic! - Developed as the final project for Harvard's CS50 Python course.
 
