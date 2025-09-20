@@ -8,11 +8,11 @@
 </div>
 
 
-# 📊 Project Overview
+## 📊 Project Overview
 
 This Python script fetches item listings from OLX (Dubizzle), extracts item names and prices, then calculates the lowest and average prices. It saves the results locally in a CSV for easy access and even handles both English and Arabic languages using regex magic! - Developed as the final project for Harvard's CS50 Python course.
 
-# 🚀 Features
+## 🚀 Features
 
 - 🔍 **Fetch Item Listings**: Extracts item details from a given URL.
 - 💵 **Price Extraction**: Handles prices formatted in both Arabic and English, including different currency symbols.
@@ -20,10 +20,10 @@ This Python script fetches item listings from OLX (Dubizzle), extracts item name
 - 📁 **CSV Export**: Saves the item details and prices into a CSV file for further analysis.
 - 🌐 **Language Compatibility**: Supports both Arabic and English site languages.
 
-# 🌍 Compatibility
+## 🌍 Compatibility
 This script is designed to work with webpages in both English and Arabic. It uses regex to handle different currency formats and symbols, making it versatile for various international sites. 
 
-## ⚙️ Prerequisites
+### ⚙️ Prerequisites
 
 To run this script, you need the following Python libraries:
 
@@ -41,13 +41,13 @@ pip install requests beautifulsoup4
 - **Specify Save Folder**: Provide the path where the CSV file should be saved.
     If not specified, the file will be saved in the user's Documents folder by default.
 
-### 🧪 Example
+🧪 Example
 ```
 Item link: https://example.com/items
 Save folder path: C:\Users\YourUsername\Documents\items.csv
 ```
 
-### 📤 Output
+📤 Output
 ```
 Item: 1,234.56 EGP
 Item: 4,670.21 EGP
