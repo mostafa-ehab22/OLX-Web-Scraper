@@ -45,7 +45,7 @@ Structured data output for further analysis and reporting.
 ```
 User Input → Web Scraping → Data Extraction → Price Analysis → CSV Export
 ├── 🔗 URL Collection → Get OLX listing page
-├── 🕷️ HTML Parsing → Extract item containers  
+├── 🔨 HTML Parsing → Extract item containers  
 ├── 💵 Price Cleaning → Regex currency processing
 ├── 📈 Statistics → Min/max/average calculations
 └── 💾 Export → UTF-8 CSV with bilingual support
