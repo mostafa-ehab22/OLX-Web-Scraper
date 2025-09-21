@@ -222,18 +222,139 @@ item_price_tag = listings[i].find('span', {'class': '_1f2a2b47'})
 - **Network Dependency**: Requires stable internet connection
 - **Legal Compliance**: Users must respect OLX terms of service
 
-## 🧪 Testing
+## 🧪 Testing & Quality Assurance
 
-Run the included test suite:
+Comprehensive **pytest** test suite ensuring reliable web scraping operations with **unit testing**, **data validation**, and **error handling scenarios**.
+
+### 🎯 Test Suite Overview
+
+Run the complete test suite:
 ```bash
 python test_project.py
 ```
 
-Test coverage includes:
-- URL validation
-- Price extraction accuracy  
-- CSV file generation
-- Error handling scenarios
+### 📋 Testing Categories & Coverage
+
+**1. 🔗 Input Validation & User Interface Tests**
+```python
+def test_get_info(monkeypatch):
+    # Test with user providing both link & save folder
+    input_values = iter(["http://example.com", "custom_folder/output.csv"])
+    monkeypatch.setattr('builtins.input', lambda _: next(input_values))
+    assert get_info() == ("http://example.com", "custom_folder/output.csv")
+    
+    # Test with user providing no link (should trigger SystemExit)
+    monkeypatch.setattr('builtins.input', lambda _: "")
+    with pytest.raises(SystemExit):
+        get_info()
+```
+**2. 🔨 Web Scraping & HTML Parsing Tests**
+```python
+def test_fetch_listings(monkeypatch):
+    # Define a mock response class to simulate HTTP response
+    class MockResponse:
+        @property
+        def content(self):
+            # Simulate HTML content with a byte string
+            return b'<div class="b5af0448">Listing</div>' 
+        
+    # Using monkeypatch: Replace requests.get with a lambda function => Returns a MockResponse instance
+    monkeypatch.setattr(requests, 'get', lambda _: MockResponse())
+    
+    # Call fetch_listings with a test URL
+    listings = fetch_listings("http://example.com")
+    
+    # Assert that exactly one listing was found
+    assert len(listings) == 1
+    
+    # Assert that the text content of the first listing matches "Listing"
+    assert listings[0].text == "Listing"
+```
+
+**3. 💰 Price Processing & Data Validation Tests**
+```python
+def test_add_item_price():
+    prices = []
+    
+    # Test adding a valid price string
+    add_item_price("1000", prices)
+    assert prices == [1000.0]
+    
+    # Test with a price string indicating no price found
+    add_item_price("Price not found", prices)
+    assert prices == [1000.0]
+    
+    # Test with an invalid price string
+    add_item_price("Invalid price", prices)
+    assert prices == [1000.0]
+
+def test_evaluate_prices():
+    # Test with a list of prices
+    prices = [100, 200, 300]
+    lowest_price, average_price = evaluate_prices(prices)
+    assert lowest_price == 100
+    assert average_price == 200
+    
+    # Test with an empty list of prices
+    assert evaluate_prices([]) == None
+```
+
+**4. 📁 CSV Generation & File I/O Tests**
+```python
+def test_create_csv(tmp_path):
+    items_details = [{'name': 'Item1', 'price': 100}, {'name': 'Item2', 'price': 200}]
+    
+    # Use tmp_path fixture to create a temporary file path
+    save_folder = tmp_path / "output.csv"
+    
+    # Call create_csv to create the CSV file
+    create_csv(items_details, save_folder)
+    
+    # Assert that the file was created
+    assert save_folder.exists()
+    
+    # Read the created CSV file and verify its content
+    with open(save_folder, 'r', encoding='utf-8') as f:
+        reader = csv.DictReader(f)
+        rows = list(reader)
+        
+        # Verify that the CSV contains the correct number of rows
+        assert len(rows) == 2
+        
+        # Verify the content of each row
+        assert rows[0] == {'name': 'Item1', 'price': '100'}
+        assert rows[1] == {'name': 'Item2', 'price': '200'}
+```
+
+### 📊 Test Implementation Details
+
+**Testing Techniques Used:**
+- 🔧 Monkeypatching: Used ``pytest.monkeypatch`` to mock user input and HTTP requests safely
+- 🗂️ Temporary Files: Utilized ``tmp_path`` fixture for clean file testing without side effects
+- 🎭 Mock Objects: Created custom ``MockResponse`` class to simulate web requests
+- ⚠️ Exception Testing: Used ``pytest.raises()`` to validate proper error handling
+- 📋 Iterators: Implemented input value iteration for multi-step user interaction testing
+
+**Quality Assurance Coverage:**
+
+- ✅ Input Validation: Both valid inputs and edge cases (empty strings)
+- ✅ Web Request Mocking: Safe testing without external dependencies
+- ✅ Price Processing: Numeric conversion and invalid data handling
+- ✅ Statistical Functions: Mathematical accuracy verification
+- ✅ File Operations: CSV generation with UTF-8 encoding validation
+- ✅ Error Scenarios: SystemExit and None return value testing
+
+**🏃‍♂️ Running the Test Suite**
+```bash
+# Run all tests with verbose output
+pytest test_project.py -v
+
+# Run tests with coverage report
+pytest test_project.py --cov=project
+
+# Run specific test function
+pytest test_project.py::test_add_item_price -v
+```
 
 ## 🤝 Contributing
 
