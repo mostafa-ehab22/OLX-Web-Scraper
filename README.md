@@ -354,7 +354,6 @@ pytest test_project.py --cov=project
 # Run specific test function
 pytest test_project.py::test_add_item_price -v
 ```
----
 
 ## 🤝 Contributing
 
