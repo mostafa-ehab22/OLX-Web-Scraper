@@ -41,13 +41,13 @@ pip install requests beautifulsoup4
 - **Specify Save Folder**: Provide the path where the CSV file should be saved.
     If not specified, the file will be saved in the user's Documents folder by default.
 
-Example
+**Example**
 ```
 Item link: https://example.com/items
 Save folder path: C:\Users\YourUsername\Documents\items.csv
 ```
 
-Output
+**Output**
 ```
 Item: 1,234.56 EGP
 Item: 4,670.21 EGP
