@@ -220,6 +220,7 @@ item_price_tag = listings[i].find('span', {'class': '_1f2a2b47'})
 - **Network Dependency**: Requires stable internet connection
 - **Legal Compliance**: Users must respect OLX terms of service
 
+---
 ## 🧪 Testing & Quality Assurance
 
 Comprehensive **pytest** test suite ensuring reliable web scraping operations with **unit testing**, **data validation**, and **error handling scenarios**.
@@ -353,6 +354,7 @@ pytest test_project.py --cov=project
 # Run specific test function
 pytest test_project.py::test_add_item_price -v
 ```
+---
 
 ## 🤝 Contributing
 
@@ -370,12 +372,6 @@ pytest test_project.py::test_add_item_price -v
 - 🔄 Automated data refresh scheduling
 - 🎨 GUI interface development
 
-## 📜 License
-
-This project is licensed under the **MIT License** - see the [LICENSE.txt](LICENSE.txt) file for details.
-
----
-
 ## ⚖️ Ethical Usage Disclaimer
 
 This tool is designed for **educational and research purposes**. Users must:
@@ -385,3 +381,7 @@ This tool is designed for **educational and research purposes**. Users must:
 - ✅ Consider website load and server resources
 
 *Always prioritize ethical web scraping practices and website sustainability.*
+
+## 📜 License
+
+This project is licensed under the **MIT License** - see the [LICENSE.txt](LICENSE.txt) file for details.
