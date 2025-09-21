@@ -9,9 +9,7 @@
 
 ## 🎯 Project Overview
 ![Python](https://img.shields.io/badge/Python-darkblue.svg?logo=python)
-![Testing](https://img.shields.io/badge/Pytest-lightblue.svg?logo=Pytest)
-![Status](https://img.shields.io/badge/Status-Complete-brightgreen.svg)
-![License](https://img.shields.io/badge/License-MIT-yellow.svg) <br>
+![Testing](https://img.shields.io/badge/Pytest-lightblue.svg?logo=Pytest) <br>
 Intelligent web scraping tool for **OLX marketplace** with advanced **bilingual support** (Arabic/English). Features automated **price analysis calculations**, **regex currency processing**, and **CSV export functionality** for comprehensive market research and data analysis. <br>
 
 ## 🏗️ Architecture & Design
