@@ -145,7 +145,7 @@ File created successfully!
 ```
 
 ### Advanced Configuration
-```python
+```bash
 # Custom save path example
 Item link: https://olx.com.eg/items/q-laptop
 Save folder path: /Users/username/Desktop/laptop_prices.csv
