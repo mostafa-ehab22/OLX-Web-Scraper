@@ -374,7 +374,7 @@ pytest test_project.py::test_add_item_price -v
 ## ⚖️ Ethical Usage Disclaimer
 
 This tool is designed for **educational and research purposes**. Users must:
-- ✅ Respect OLX's robots.txt and terms of service
+- ✅ Respect OLX's terms of service
 - ✅ Implement appropriate request delays for large-scale scraping  
 - ✅ Use scraped data responsibly and legally
 - ✅ Consider website load and server resources
