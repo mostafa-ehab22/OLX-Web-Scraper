@@ -21,6 +21,7 @@ Intelligent web scraping tool for **OLX marketplace** with advanced **bilingual 
 - **BeautifulSoup4** → HTML parsing and DOM navigation
 - **CSV Module** → Data export with UTF-8 encoding support
 - **Regex** → Advanced currency extraction and price processing
+- **Pytest** → Testing framework with monkeypatching, fixtures, and coverage analysis
 
 ### Core Components
 
