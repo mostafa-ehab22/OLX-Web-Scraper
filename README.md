@@ -258,7 +258,7 @@ def test_fetch_listings(monkeypatch):
             # Simulate HTML content with a byte string
             return b'<div class="b5af0448">Listing</div>' 
         
-    # Using monkeypatch: Replace requests.get with a lambda function => Returns MockResponse instance
+    # Using monkeypatch: Replace requests.get with lambda function => Returns MockResponse instance
     monkeypatch.setattr(requests, 'get', lambda _: MockResponse())
     
     # Call fetch_listings with a test URL
