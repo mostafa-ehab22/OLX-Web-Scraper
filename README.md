@@ -17,11 +17,12 @@ Intelligent web scraping tool for **OLX marketplace** with advanced **bilingual 
 ### Tech Stack
 
 - **Python 3.6+** → Core scripting language with robust web scraping capabilities
+- - **Pytest** → Testing framework with monkeypatching, fixtures, and coverage analysis
 - **Requests** → HTTP library for fetching web content
 - **BeautifulSoup4** → HTML parsing and DOM navigation
 - **CSV Module** → Data export with UTF-8 encoding support
 - **Regex** → Advanced currency extraction and price processing
-- **Pytest** → Testing framework with monkeypatching, fixtures, and coverage analysis
+
 
 ### Core Components
 
