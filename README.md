@@ -214,7 +214,7 @@ item_name_tag = listings[i].find('h2', {'class': '_941ffa5e'})
 item_price_tag = listings[i].find('span', {'class': '_1f2a2b47'})
 ```
 
-## ⚠️ Limitations & Considerations
+## ⚠️ Limitations
 
 - **Website Dependencies**: Relies on specific OLX CSS class structure
 - **Rate Limiting**: No built-in delays - use responsibly to avoid IP blocking
@@ -223,7 +223,7 @@ item_price_tag = listings[i].find('span', {'class': '_1f2a2b47'})
 - **Legal Compliance**: Users must respect OLX terms of service
 
 ---
-## 🧪 Testing & Quality Assurance
+## 🧪 Quality Assurance
 
 Comprehensive **pytest** test suite ensuring reliable web scraping operations with **unit testing**, **data validation**, and **error handling scenarios**.
 
