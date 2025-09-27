@@ -4,7 +4,7 @@
 </div>
 
 <div align=center>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <a href="https://cs50.harvard.edu/python/2022/">Course</a> | 
     <a href="https://www.youtube.com/watch?v=1tqYgZAPzo0" alt="Video Demo">Video Demo</a> | 
     <a href="https://certificates.cs50.io/cf88d045-083e-4ee7-b51c-d5b447ea86dd.png?size=A4">Certification</a>
