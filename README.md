@@ -1,11 +1,17 @@
-<h1 align=center>OLX Web Scraper</h1>
-<br>
+ <div align=center>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Harvard_University_coat_of_arms.svg/800px-Harvard_University_coat_of_arms.svg.png" height=220>
+    <p> 2024 </p>
+</div>
 
 <div align=center>
-    <span>🍿</span>
-<a href="https://www.youtube.com/watch?v=1tqYgZAPzo0" alt="Video Demo">Video Demo</a>
-    <span>🍿</span>
+    <span>📚</span>
+    <a href="https://cs50.harvard.edu/python/2022/">Course</a> |
+    <span>🎬</span>
+    <a href="https://www.youtube.com/watch?v=1tqYgZAPzo0" alt="Video Demo">Video Demo</a> |
+    <span>📜</span>
+    <a href="https://certificates.cs50.io/cf88d045-083e-4ee7-b51c-d5b447ea86dd.png?size=A4">Certification</a>
 </div>
+ 
 
 ## 🎯 Project Overview
 ![Python](https://img.shields.io/badge/Python-darkblue.svg?logo=python)
