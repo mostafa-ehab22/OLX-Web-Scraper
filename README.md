@@ -4,11 +4,8 @@
 </div>
 
 <div align=center>
-    <span>📚</span>
     <a href="https://cs50.harvard.edu/python/2022/">Course</a> |
-    <span>🎬</span>
     <a href="https://www.youtube.com/watch?v=1tqYgZAPzo0" alt="Video Demo">Video Demo</a> |
-    <span>📜</span>
     <a href="https://certificates.cs50.io/cf88d045-083e-4ee7-b51c-d5b447ea86dd.png?size=A4">Certification</a>
 </div>
  
@@ -16,7 +13,7 @@
 ## 🎯 Project Overview
 ![Python](https://img.shields.io/badge/Python-darkblue.svg?logo=python)
 ![Testing](https://img.shields.io/badge/Pytest-lightblue.svg?logo=Pytest) <br>
-Intelligent web scraping tool developed as the final project for **Harvard's CS50 Introduction to Programming with Python** for **OLX marketplace** with advanced **bilingual support** (Arabic/English). Features automated **price analysis calculations**, **regex currency processing**, and **CSV export functionality** for comprehensive market research and data analysis. <br>
+Intelligent web scraping tool developed as the final project for **Harvard's CS50 Introduction to Programming with Python**, targeting the **OLX marketplace** with advanced **bilingual support** (Arabic/English). Delivers automated **price analysis calculations**, **regex currency processing**, and **CSV export functionality** for comprehensive market research and data-driven insights. <br>
 
 ## 🏗️ Architecture & Design
 
