@@ -343,7 +343,7 @@ def test_create_csv(tmp_path):
 
 ## 📊 Test Implementation Details
 
-**Testing Techniques Used:**
+### Testing Techniques Used:
 - 🔧 Monkeypatching: Used ``pytest.monkeypatch`` to mock user input and HTTP requests safely
 - 🗂️ Temporary Files: Utilized ``tmp_path`` fixture for clean file testing without side effects
 - 🎭 Mock Objects: Created custom ``MockResponse`` class to simulate web requests
