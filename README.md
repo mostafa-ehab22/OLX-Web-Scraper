@@ -11,7 +11,7 @@
 </div>
  
 
-## 🎯 Project Overview
+# 🎯 Project Overview
 ![Python](https://img.shields.io/badge/Python-darkblue.svg?logo=python)
 ![Testing](https://img.shields.io/badge/Pytest-lightblue.svg?logo=Pytest) <br>
 Intelligent web scraping tool developed as the final project for **Harvard's CS50 Introduction to Programming with Python**, targeting the **OLX marketplace** with seamless **bilingual support** (Arabic/English). Delivers automated **price analysis calculations**, **regex currency processing**, and **CSV export functionality** for comprehensive market research and data analysis. <br>
@@ -227,7 +227,7 @@ item_price_tag = listings[i].find('span', {'class': '_1f2a2b47'})
 - **Legal Compliance**: Users must respect OLX terms of service
 
 ---
-## 🧪 Quality Assurance
+# 🧪 Quality Assurance
 
 Comprehensive **pytest** test suite ensuring reliable web scraping operations with **unit testing**, **data validation**, and **error handling scenarios**.
 
