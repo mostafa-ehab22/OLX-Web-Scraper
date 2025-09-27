@@ -233,7 +233,7 @@ Comprehensive **pytest** test suite ensuring reliable web scraping operations wi
 
 ## 🎯 Test Suite Overview
 
-### 🏃‍♂️ Running the Test Suite
+### Running the Test Suite
 ```bash
 #Run the complete test suite
 python test_project.py
@@ -248,7 +248,7 @@ pytest test_project.py --cov=project
 pytest test_project.py::test_add_item_price -v
 ```
 
-### 📋 Testing Categories & Coverage
+### Testing Categories & Coverage
 
 **1. 🔗 Input Validation & User Interface Tests**
 ```python
