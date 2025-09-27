@@ -1,6 +1,6 @@
  <div align=center>
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Harvard_University_coat_of_arms.svg/800px-Harvard_University_coat_of_arms.svg.png" height=215>
-    <p> 2024 </p>
+    <p>2024</p>
 </div>
 
 <div align=center>
