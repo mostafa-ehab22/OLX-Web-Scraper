@@ -341,7 +341,7 @@ def test_create_csv(tmp_path):
         assert rows[1] == {'name': 'Item2', 'price': '200'}
 ```
 
-## 📊 Test Implementation Details
+## 📊 Implementation Details
 
 ### Testing Techniques Used:
 - 🔧 Monkeypatching: Used ``pytest.monkeypatch`` to mock user input and HTTP requests safely
