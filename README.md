@@ -231,14 +231,14 @@ item_price_tag = listings[i].find('span', {'class': '_1f2a2b47'})
 
 Comprehensive **pytest** test suite ensuring reliable web scraping operations with **unit testing**, **data validation**, and **error handling scenarios**.
 
-### 🎯 Test Suite Overview
+## 🎯 Test Suite Overview
 
 Run the complete test suite:
 ```bash
 python test_project.py
 ```
 
-### 📋 Testing Categories & Coverage
+## 📋 Testing Categories & Coverage
 
 **1. 🔗 Input Validation & User Interface Tests**
 ```python
@@ -331,7 +331,7 @@ def test_create_csv(tmp_path):
         assert rows[1] == {'name': 'Item2', 'price': '200'}
 ```
 
-### 📊 Test Implementation Details
+## 📊 Test Implementation Details
 
 **Testing Techniques Used:**
 - 🔧 Monkeypatching: Used ``pytest.monkeypatch`` to mock user input and HTTP requests safely
@@ -340,7 +340,7 @@ def test_create_csv(tmp_path):
 - ⚠️ Exception Testing: Used ``pytest.raises()`` to validate proper error handling
 - 📋 Iterators: Implemented input value iteration for multi-step user interaction testing
 
-**Quality Assurance Coverage:**
+### Quality Assurance Coverage:
 
 - ✅ Input Validation: Both valid inputs and edge cases (empty strings)
 - ✅ Web Request Mocking: Safe testing without external dependencies
@@ -349,7 +349,7 @@ def test_create_csv(tmp_path):
 - ✅ File Operations: CSV generation with UTF-8 encoding validation
 - ✅ Error Scenarios: SystemExit and None return value testing
 
-**🏃‍♂️ Running the Test Suite**
+### 🏃‍♂️ Running the Test Suite
 ```bash
 # Run all tests with verbose output
 pytest test_project.py -v
