@@ -238,7 +238,7 @@ Run the complete test suite:
 python test_project.py
 ```
 
-## 📋 Testing Categories & Coverage
+### 📋 Testing Categories & Coverage
 
 **1. 🔗 Input Validation & User Interface Tests**
 ```python
