@@ -233,9 +233,19 @@ Comprehensive **pytest** test suite ensuring reliable web scraping operations wi
 
 ## 🎯 Test Suite Overview
 
-Run the complete test suite:
+### 🏃‍♂️ Running the Test Suite
 ```bash
+#Run the complete test suite
 python test_project.py
+
+# Run all tests with verbose output
+pytest test_project.py -v
+
+# Run tests with coverage report
+pytest test_project.py --cov=project
+
+# Run specific test function
+pytest test_project.py::test_add_item_price -v
 ```
 
 ### 📋 Testing Categories & Coverage
@@ -348,18 +358,6 @@ def test_create_csv(tmp_path):
 - ✅ Statistical Functions: Mathematical accuracy verification
 - ✅ File Operations: CSV generation with UTF-8 encoding validation
 - ✅ Error Scenarios: SystemExit and None return value testing
-
-### 🏃‍♂️ Running the Test Suite
-```bash
-# Run all tests with verbose output
-pytest test_project.py -v
-
-# Run tests with coverage report
-pytest test_project.py --cov=project
-
-# Run specific test function
-pytest test_project.py::test_add_item_price -v
-```
 
 ## 🤝 Contributing
 
