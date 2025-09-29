@@ -227,7 +227,7 @@ item_price_tag = listings[i].find('span', {'class': '_1f2a2b47'})
 - **Legal Compliance**: Users must respect OLX terms of service
 
 ---
-## 🧪 Quality Assurance
+# 🧪 Quality Assurance
 
 Comprehensive **pytest** test suite ensuring reliable web scraping operations with **unit testing**, **data validation**, and **error handling scenarios**.
 
