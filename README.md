@@ -83,7 +83,7 @@ User Input → Web Scraping → Data Extraction → Price Analysis → CSV Expor
 6. 📊 **Price Analytics**  
    Real-time calculation of minimum and average prices across listings.
 
-7. 📁 **CSV Data Export**  
+7. 📤 **CSV Data Export**  
    UTF-8 encoded file generation with structured headers and clean formatting.
 
 8. ⚠️ **Error Handling**  
