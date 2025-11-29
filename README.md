@@ -133,35 +133,94 @@ python project.py
 ```bash
 $ python project.py
 
+═════════════════════════════════════════
+║ OLX WEB SCRAPER BY MOSTAFA EHAB YEHIA ║
+═════════════════════════════════════════
+
+═══════════════════════════════════
+║ OLX WEB SCRAPER - CONFIGURATION ║
+═══════════════════════════════════
+
 Item link: https://olx.com.eg/items/q-iphone
-Save folder path (Default: Documents\output.csv): 
+Save folder path (Default: Documents/output.csv): 
 
-iPhone 13 Pro Max 256GB : 28,500 EGP
-iPhone 12 Pro 128GB : 22,000 EGP  
-iPhone 11 64GB : 15,500 EGP
-Samsung Galaxy S23 Ultra : 35,000 EGP
+ℹ Using default path: /Users/username/Documents/output.csv
+ℹ Fetching listings from webpage...
+✓ Found 25 listings!
 
-(Showing 4 results)
+════════════════════
+║ SCRAPING RESULTS ║
+════════════════════
 
+Scraping: [████████████████████████████████████████] 100.0% (25/25)
+
+  1. iPhone 13 Pro Max 256GB
+     ├─ Price: 28,500 EGP
+  2. iPhone 12 Pro 128GB
+     ├─ Price: 22,000 EGP
+  3. iPhone 11 64GB
+     ├─ Price: 15,500 EGP
+  4. Samsung Galaxy S23 Ultra
+     ├─ Price: 35,000 EGP
+
+────────────────────────────────────────────────────────────
+SUMMARY STATISTICS
+────────────────────────────────────────────────────────────
+
+Total Listings Found: 25
 Lowest Price: 15,500.00 EGP
 Average Price: 25,250.00 EGP
 
-Do you want to create csv file? (y/n): y
-File created successfully!
+────────────────────────────────────────────────────────────
+
+Do you want to create CSV file? (y/n): y
+✓ File created successfully at: /Users/username/Documents/output.csv
 ```
 
 ### Advanced Configuration
 ```bash
 # Custom save path example
+═══════════════════════════════════
+║ OLX WEB SCRAPER - CONFIGURATION ║
+═══════════════════════════════════
+
 Item link: https://olx.com.eg/items/q-laptop
-Save folder path: /Users/username/Desktop/laptop_prices.csv
+Save folder path (Default: Documents/output.csv): /Users/username/Desktop/laptop_prices.csv
+
+ℹ Fetching listings from webpage...
+✓ Found 18 listings!
 ```
 
+### Output Features
+- 🎨 **Color-coded interface** for better readability
+- 📊 **Real-time progress bar** during scraping
+- 📈 **Automatic price statistics** (lowest & average)
+- ✅ **Visual status indicators** (✓, ✗, ℹ, ⚠)
+- 🎯 **Clean, organized output** with tree-style formatting
+
 ## 💻 Code Highlights
+
+### Enhanced Console Output
+```python
+# Color-coded printing system
+class Colors:
+    HEADER = '\033[95m'  # Magenta for headers
+    OKCYAN = '\033[96m'  # Cyan for info
+    OKGREEN = '\033[92m' # Green for success
+    WARNING = '\033[93m' # Yellow for warnings
+    FAIL = '\033[91m'    # Red for errors
+    BOLD = '\033[1m'     # Bold text
+
+def print_item(index, name, price):
+    """Display items with tree-style formatting"""
+    print(f"{Colors.BOLD}{index:3d}.{Colors.ENDC} {Colors.OKCYAN}{name}{Colors.ENDC}")
+    print(f"     {Colors.OKGREEN}├─ Price: {price}{Colors.ENDC}")
+```
 
 ### Smart Price Processing
 ```python
 def add_item_price(item_price, prices):
+    """Extract and validate numeric prices from text"""
     if item_price != "Price not found":
         try:
             # Regex to extract numeric part of the price
@@ -178,28 +237,66 @@ def add_item_price(item_price, prices):
 ### Robust Web Scraping
 ```python
 def fetch_listings(link):
-    page = requests.get(link)
-    src = page.content # Page content (Byte code)
-    soup = BeautifulSoup(src, "html.parser") # Parsing page
-    
-    # Target specific OLX CSS classes for reliable extraction
-    listings = soup.find_all('div', {'class': 'b5af0448'})
-    return listings
+    """Fetch and parse OLX listings with error handling"""
+    print_info("Fetching listings from webpage...")
+    try:
+        page = requests.get(link)
+        page.raise_for_status()  # Raise exception for bad status codes
+        src = page.content
+        soup = BeautifulSoup(src, "html.parser")
+        
+        # Target specific OLX CSS classes for reliable extraction
+        listings = soup.find_all('div', {'class': 'b5af0448'})
+        print_success(f"Found {len(listings)} listings!")
+        return listings
+    except requests.exceptions.RequestException as e:
+        print_error(f"Failed to fetch webpage: {e}")
+        sys.exit(1)
+```
+
+### Progress Tracking
+```python
+def print_progress(current, total):
+    """Display real-time scraping progress"""
+    bar_length = 40
+    progress = current / total
+    filled = int(bar_length * progress)
+    bar = "█" * filled + "░" * (bar_length - filled)
+    percentage = progress * 100
+    print(f"\rScraping: [{bar}] {percentage:.1f}% ({current}/{total})", end='', flush=True)
 ```
 
 ### Bilingual CSV Export
 ```python
 def create_csv(items_details, save_folder):
+    """Export data to CSV with UTF-8 encoding for Arabic support"""
     headers = items_details[0].keys()
     
-    # UTF-8 encoding ensures Arabic text support
-    with open(save_folder, 'w', encoding='utf-8') as output_file:
-        writer = csv.DictWriter(output_file, headers)
-        writer.writeheader()
-        writer.writerows(items_details)
-        print("File created successfully!\n")
+    try:
+        # UTF-8 encoding ensures Arabic text support
+        with open(save_folder, 'w', encoding='utf-8') as output_file:
+            writer = csv.DictWriter(output_file, headers)
+            writer.writeheader()
+            writer.writerows(items_details)
+            print_success(f"File created successfully at: {save_folder}")
+    except IOError as e:
+        print_error(f"Failed to create file: {e}")
 ```
 
+### Statistical Analysis
+```python
+def evaluate_prices(prices):
+    """Calculate price statistics with error handling"""
+    if prices:
+        try:
+            lowest_price = min(prices)
+            average_price = sum(prices) / len(prices)
+            return (lowest_price, average_price)
+        except (TypeError, ZeroDivisionError) as e:
+            print_error(f"Error when evaluating prices: {e}")
+            return (0, 0)
+    return (0, 0)
+```
 ## 🎛️ Configuration
 
 ### Supported OLX Regions
