@@ -180,9 +180,9 @@ Do you want to create CSV file? (y/n): y
 ### Advanced Configuration
 ```bash
 # Custom save path example
-═══════════════════════════════
+══════════════════════════════
 ║ OLX WEB SCRAPER - CONFIGURATION ║
-═══════════════════════════════
+══════════════════════════════
 
 Item link: https://olx.com.eg/items/q-laptop
 Save folder path (Default: Documents/output.csv): /Users/username/Desktop/laptop_prices.csv
