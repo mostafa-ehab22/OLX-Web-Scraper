@@ -133,13 +133,13 @@ python project.py
 ```bash
 $ python project.py
 
-═════════════════════════════════════════
+════════════════════════════════════
 ║ OLX WEB SCRAPER BY MOSTAFA EHAB YEHIA ║
-═════════════════════════════════════════
+════════════════════════════════════
 
-═══════════════════════════════════
+═══════════════════════════════
 ║ OLX WEB SCRAPER - CONFIGURATION ║
-═══════════════════════════════════
+═══════════════════════════════
 
 Item link: https://olx.com.eg/items/q-iphone
 Save folder path (Default: Documents/output.csv): 
@@ -148,9 +148,9 @@ Save folder path (Default: Documents/output.csv):
 ℹ Fetching listings from webpage...
 ✓ Found 25 listings!
 
-════════════════════
+══════════════════
 ║ SCRAPING RESULTS ║
-════════════════════
+══════════════════
 
 Scraping: [████████████████████████████████████████] 100.0% (25/25)
 
@@ -180,9 +180,9 @@ Do you want to create CSV file? (y/n): y
 ### Advanced Configuration
 ```bash
 # Custom save path example
-═══════════════════════════════════
+═══════════════════════════════
 ║ OLX WEB SCRAPER - CONFIGURATION ║
-═══════════════════════════════════
+═══════════════════════════════
 
 Item link: https://olx.com.eg/items/q-laptop
 Save folder path (Default: Documents/output.csv): /Users/username/Desktop/laptop_prices.csv
