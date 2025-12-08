@@ -134,11 +134,11 @@ python project.py
 $ python project.py
 
 ═════════════════════════════════════════
-║ OLX WEB SCRAPER BY MOSTAFA EHAB YEHIA ║
+  OLX WEB SCRAPER BY MOSTAFA EHAB YEHIA 
 ═════════════════════════════════════════
 
 ═══════════════════════════════════
-║ OLX WEB SCRAPER - CONFIGURATION ║
+  OLX WEB SCRAPER - CONFIGURATION 
 ═══════════════════════════════════
 
 Item link: https://olx.com.eg/items/q-iphone
@@ -149,7 +149,7 @@ Save folder path (Default: Documents/output.csv):
 ✓ Found 25 listings!
 
 ════════════════════
-║ SCRAPING RESULTS ║
+  SCRAPING RESULTS 
 ════════════════════
 
 Scraping: [████████████████████████████████████████] 100.0% (25/25)
