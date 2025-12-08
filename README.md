@@ -181,7 +181,7 @@ Do you want to create CSV file? (y/n): y
 ```bash
 # Custom save path example
 ═══════════════════════════════════
-║ OLX WEB SCRAPER - CONFIGURATION ║
+  OLX WEB SCRAPER - CONFIGURATION 
 ═══════════════════════════════════
 
 Item link: https://olx.com.eg/items/q-laptop
