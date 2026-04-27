@@ -475,10 +475,10 @@ def test_create_csv(tmp_path):
 ## ⚖️ Ethical Usage Disclaimer
 
 This tool is designed for **educational and research purposes**. Users must:
-- ✅ Respect OLX's terms of service
-- ✅ Implement appropriate request delays for large-scale scraping  
-- ✅ Use scraped data responsibly and legally
-- ✅ Consider website load and server resources
+- Respect OLX's terms of service
+- Implement appropriate request delays for large-scale scraping  
+- Use scraped data responsibly and legally
+- Consider website load and server resources
 
 *Always prioritize ethical web scraping practices and website sustainability.*
 
