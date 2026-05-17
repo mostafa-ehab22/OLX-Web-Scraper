@@ -95,11 +95,11 @@ OLX-Web-Scraper/
 │
 ├── 📄 project.py                         ⬅️ Main scraper application
 ├── 🧪 test_project.py                    ⬅️ Unit tests and validation
-├── 📋 README.md                          ⬅️ Project documentation  
-├── 📜 LICENSE.txt                        ⬅️ MIT License
-├── 🖼️ Diagram.png                        ⬅️ Visual project overview
-├── 📐 diagram.drawio                     ⬅️ Editable diagram source
-└── 📁 __pycache__/                       ⬅️ Python cache files
+├── README.md                          ⬅️ Project documentation  
+├── LICENSE.txt                        ⬅️ MIT License
+├── Diagram.png                        ⬅️ Visual project overview
+├── diagram.drawio                     ⬅️ Editable diagram source
+└── __pycache__/                       ⬅️ Python cache files
 ```
 
 ## 🔧 Installation & Setup
