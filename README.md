@@ -96,7 +96,6 @@ User Input → Web Scraping → Data Extraction → Price Analysis → CSV Expor
 ## 📂 Project Structure
 ```
 OLX-Web-Scraper/
-│
 ├── project.py                      ⬅️ Main scraper application
 ├── test_project.py                 ⬅️ Unit tests and validation
 ├── README.md                          Project documentation  
