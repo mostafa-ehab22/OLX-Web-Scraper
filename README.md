@@ -14,7 +14,6 @@
 ## 🎯 Project Overview
 ![Python](https://img.shields.io/badge/Python-darkblue.svg?logo=python)
 ![Testing](https://img.shields.io/badge/Pytest-lightblue.svg?logo=Pytest) <br>
-Intelligent web scraping tool developed as the final project for **Harvard's CS50 Introduction to Programming with Python**, targeting the **OLX marketplace** with seamless **bilingual support** (Arabic/English). Delivers automated **price analysis calculations**, **regex currency processing**, and **CSV export functionality** for comprehensive market research and data analysis. <br>
 
 Intelligent web scraping tool targeting the **OLX marketplace** with seamless **bilingual support** (Arabic/English). Automates **price analysis**, **regex-based currency processing**, and **CSV export** for structured market research and data analysis.
 
