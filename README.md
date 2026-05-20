@@ -18,7 +18,7 @@
 Intelligent web scraping tool targeting the **OLX marketplace** with seamless **bilingual support** (Arabic/English). Automates **price analysis**, **regex-based currency processing**, and **CSV export** for structured market research and data analysis.
 
 > [!IMPORTANT]
-> Submitted as the final project for **Harvard's CS50 Introduction to Programming with Python**, earning a **verified certification**.
+> Submitted as the final project for **Harvard's CS50 Introduction to Programming with Python**.
 
 ## 🏗️ Architecture & Design
 
