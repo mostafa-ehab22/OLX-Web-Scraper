@@ -5,8 +5,8 @@
 
 <div align=center>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="https://cs50.harvard.edu/python/2022/">Course</a> | 
-    <a href="https://www.youtube.com/watch?v=1tqYgZAPzo0" alt="Video Demo">Video Demo</a> | 
+    <a href="https://cs50.harvard.edu/python/2022/">Course</a> │
+    <a href="https://www.youtube.com/watch?v=1tqYgZAPzo0" alt="Video Demo">Video Demo</a> │ 
     <a href="https://certificates.cs50.io/cf88d045-083e-4ee7-b51c-d5b447ea86dd.png?size=A4">Certification</a>
 </div>
  
@@ -17,7 +17,7 @@
 
 Intelligent web scraping tool targeting the **OLX marketplace** with seamless **bilingual support** (Arabic/English). Automates **price analysis**, **regex-based currency processing**, and **CSV export** for structured market research and data analysis.
 
-> [!NOTE]
+> [!IMPORTANT]
 > Submitted as the final project for **Harvard's CS50 Introduction to Programming with Python**.
 
 ## 🏗️ Architecture & Design
