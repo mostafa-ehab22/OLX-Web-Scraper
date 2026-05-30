@@ -62,10 +62,10 @@ User Input → Web Scraping → Data Extraction → Price Analysis → CSV Expor
 
 ### Benefits:
 
-- ✅ **Bilingual Support** - Handles Arabic and English content seamlessly
-- ✅ **Smart Parsing** - Regex-based price extraction with error handling
-- ✅ **Market Analysis** - Automatic price statistics and insights
-- ✅ **Data Export** - Clean CSV output for further analysis
+- **Bilingual Support** - Handles Arabic and English content seamlessly
+- **Smart Parsing** - Regex-based price extraction with error handling
+- **Market Analysis** - Automatic price statistics and insights
+- **Data Export** - Clean CSV output for further analysis
 
 ## ⚙️ Features
 
@@ -452,12 +452,12 @@ def test_create_csv(tmp_path):
 
 ### Quality Assurance Coverage:
 
-- ✅ Input Validation: Both valid inputs and edge cases (empty strings)
-- ✅ Web Request Mocking: Safe testing without external dependencies
-- ✅ Price Processing: Numeric conversion and invalid data handling
-- ✅ Statistical Functions: Mathematical accuracy verification
-- ✅ File Operations: CSV generation with UTF-8 encoding validation
-- ✅ Error Scenarios: SystemExit and None return value testing
+- **Input Validation:**  Both valid inputs and edge cases (empty strings)
+- **Web Request Mocking:**  Safe testing without external dependencies
+- **Price Processing:** Numeric conversion and invalid data handling
+- **Statistical Functions:** Mathematical accuracy verification
+- **File Operations:** CSV generation with UTF-8 encoding validation
+- **Error Scenarios:** SystemExit and None return value testing
 
 ## 🤝 Contributing
 
@@ -487,4 +487,4 @@ This tool is designed for **educational and research purposes**. Users must:
 
 ## 📜 License
 
-This project is licensed under the **MIT License** - see the [LICENSE.txt](LICENSE.txt) file for details.
+This project is licensed under the **MIT License** - see [LICENSE](LICENSE.txt) file for details.
